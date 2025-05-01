@@ -1,11 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');  
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: monospace;
+    color: #fff;
+    .cal-sans-regular {
+        font-family: "Cal Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
 }
 
 html, body{
     height: 100;
     width: 100;
+}
+#nav{
+    height: 145px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    padding: 0 150px;
+    gap: 45px;
+    position: fixed;
+    justify-content: flex-start;
+    z-index: 99;
+
+}
+#nav img{
+    height: 70px;
+
+}
+#nav h4{
+    font-weight: 525;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+}
+#main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.37);
+
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+  
+}
+#page1 h1{
+    font-size: 120px;
+    font-weight: 600;
+}
+#page1 h2{
+    font-size: 40px;
+    font-weight: 200;
+}
+#page1 p{
+    font-size: 18px;
+    font-weight: 50;
+    width: 40%;
 }
